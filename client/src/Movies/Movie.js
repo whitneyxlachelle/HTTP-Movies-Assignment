@@ -40,6 +40,11 @@ function Movie({ addToSavedList }) {
         Edit
       </div>
       </Link>
+      <Link to={`movies/${match.params.id}`}>
+      <div className='save-button' onClick={saveMovie}>
+        Delete
+      </div>
+      </Link>
     </div>
   );
 }
